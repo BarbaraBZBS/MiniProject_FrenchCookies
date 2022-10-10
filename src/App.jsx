@@ -1,4 +1,4 @@
-import './App.css';
+//imports picture, css framework, fontawesome icons
 import pic from './assets/mainpic.jpg';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,6 +9,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 library.add( faFullStar )
 library.add( faEmptyStar )
 
+//styled components for css
 const StyledMain = styled.main`
 margin: 25px;
 padding: 10px;
@@ -21,19 +22,16 @@ flex-direction: column;
     width: 100%;
   }
 `;
-
 const StyledImg = styled.img`
 object-fit: cover;
 height: 350px;
 width: 80%;
 margin: auto;
 `;
-
 const StyledSection = styled.section`
 width: 80%;
 margin: auto;
 `;
-
 const StyledMainTitle = styled.h1`
 font-size: 40px;
 font-weight: 400;
@@ -43,18 +41,15 @@ margin: 15px 0 0 0;
     margin-bottom: 15px;
   }
 `;
-
 const StyledParag = styled.p`
 margin: 0;
 `;
-
 const StyledTitle = styled.h2`
 font-size: 30px;
 font-weight: 400;
 margin: 15px 0 10px 0;
 border-bottom: solid 1px lightgrey;
 `;
-
 const StyledOverview = styled.div`
 display: flex;
 flex-direction: row;
@@ -65,7 +60,6 @@ margin-right: 60px;
     margin-right: 0;
   }
 `;
-
 const StyledSpan = styled.span`
 font-size: 14px;
 text-align: center;
@@ -73,13 +67,11 @@ text-align: center;
     margin-bottom: 20px;
   }
 `;
-
 const StyledIcons = styled.div`
 padding: 20px 12px 19px 10px;
 margin: 10px 0 15px 0;
 text-align: center;
 `;
-
 const StyledBubble = styled.div`
 border: 1px solid lightgrey;
 border-radius: 35px;
@@ -88,18 +80,15 @@ margin: 10px 0 15px 0;
 width: 30px;
 text-align: center;
 `;
-
 const StyledInfo = styled.p`
 font-size: 10px;
 margin: 0
 `;
-
 const StyledPart = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
 `;
-
 const StyledTable = styled.table`
 width: 100%;
 text-align: center;
@@ -113,35 +102,33 @@ border-spacing: 0;
     font-size: 12px;
   }
 `;
-
 const StyledTR = styled.tr`
 &:nth-child(even) {
         background-color: #f2f2f2;
     }
 `;
-
 const StyledTD = styled.td`
 border-top: lightgrey solid 1px;
 `;
-
 const StyledTH = styled.th`
 border-top: lightgrey solid 1px;
 border-bottom: lightgrey solid 1px;
 `;
-
 const StyledLastSpan = styled.span`
 font-size: 14px;
 font-weight: 100;
 `;
-
 const StyledStrong = styled.strong`
 font-size: 25px;
 font-weight: 700;
 padding: 10px;
 `;
 
-
+//app component function with html content
 function App() {
+    //main with a section and several parts
+    // for rendering of icons titles paragraphs bubbles and a table
+    //according to the model
     return <StyledMain>
         <StyledImg src={ pic } alt='food banner' />
         <StyledSection>
