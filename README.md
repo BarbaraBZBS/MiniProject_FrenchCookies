@@ -1,4 +1,4 @@
-view page at: https://frenchcookies.netlify.app/
+VIEW PAGE AT: https://frenchcookies.netlify.app/
 
 
 # Getting Started with Create React App
